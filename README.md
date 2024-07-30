@@ -1,5 +1,5 @@
 # java-logging-library-demo
-A demo application for showing how to use java logging library in tiket. As this project already supports using devcontainers so you can easily open this project on VSCode and choose the option to `Rebuild and Reopen in container`. It will automatically setup local environment for the project. Make sure that you have [Docker](https://www.docker.com/) installed on your machine and it is running.
+A demo application for showing how to use java logging library in tiket. As this project already supports using devcontainers so you can easily open this project on [VSCode](https://code.visualstudio.com) and choose the option to `Rebuild and Reopen in container`. It will automatically setup local environment for the project. Make sure that you have [Docker](https://www.docker.com/) installed on your machine and it is running.
 
 On running the application following output should be displayed on the console
 
