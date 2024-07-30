@@ -16,3 +16,10 @@ On running the application following output should be displayed on the console
 {"sdc":{"key":"value"},"err":null,"level":"WARN","x_request_id":"12345","source":"com.example.demo.DemoApplication.lambda$0:DemoApplication.java:28","thread":"1","message":"This is a warn message","timestamp":"2024-07-30T06:20:19.953969055Z"}
 {"sdc":{"key":"value"},"err":"Error details","level":"ERROR","x_request_id":"12345","source":"com.example.demo.DemoApplication.lambda$0:DemoApplication.java:29","thread":"1","message":"This is an error message","timestamp":"2024-07-30T06:20:19.968786346Z"}
 ```
+
+If in case you like to love doing things on terminal then open a new terminal and type following commands at the root directory of this project to run the application
+```
+$ mvn clean install
+$ mvn spring-boot:run
+```
+On running the second command you should be able to see the output as shared previously.
