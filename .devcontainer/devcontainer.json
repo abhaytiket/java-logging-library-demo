@@ -1,0 +1,49 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.0/containers/java-8
+{
+    "name": "DEMO",
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/app",
+    "service": "demo",
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // Set *default* container specific settings.json values on container create.
+            "settings": { 
+                "java.server.launchMode":"Standard",
+                "sonarlint.ls.javaHome":"/root/.sdkman/candidates/java/current",
+                "java.jdt.ls.java.home":"/root/.sdkman/candidates/java/current",
+                "java.import.gradle.java.home": "/root/.sdkman/candidates/java/11.0.23-librca",
+                "java.configuration.runtimes": [{
+                    "default": true,
+                    "name": "JavaSE-21",
+                    "path": "/root/.sdkman/candidates/java/current"
+                }],
+                "sonarlint.connectedMode.connections.sonarqube": [
+                    {
+                        "serverId": "sonarqubeServer",
+                        "serverUrl": "https://sonar-server.tiket.com",
+                        "token": "fea21352a50558b9fda0e27d7630baea7fa9c1cc"
+                    }
+                ]
+            },
+            
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vmware.vscode-boot-dev-pack",
+                "SonarSource.sonarlint-vscode",
+                "GitHub.copilot",
+                "vscjava.vscode-gradle",
+                "ms-vsliveshare.vsliveshare",
+                "eamodio.gitlens",
+                "vscjava.vscode-java-debug",
+                "vscjava.vscode-lombok",
+                "redhat.fabric8-analytics"
+            ]
+        }
+    },
+    "overrideCommand": true,
+    "postCreateCommand": "cp -r /app/.devcontainer/.m2 /root/"
+}

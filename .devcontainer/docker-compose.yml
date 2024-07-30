@@ -1,0 +1,10 @@
+services:
+  demo:
+    build: .
+    volumes:
+      - ..:/app
+    networks:
+      - demo-net
+networks:
+  demo-net:
+    driver: bridge

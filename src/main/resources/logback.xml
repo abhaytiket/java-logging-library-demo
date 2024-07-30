@@ -1,0 +1,12 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.err</target> <!-- Redirects log messages to stderr -->
+        <encoder>
+            <pattern>%msg%n</pattern> <!--%msg%n  means only the log message itself will be printed, followed by a newline character-->
+        </encoder>
+    </appender>
+
+    <root level="WARN"> 
+        <appender-ref ref="CONSOLE"/> <!--The root logger level is set to WARN. This means that only log messages with a level of WARN or higher (ERROR, FATAL) will be output to the console. Log messages with levels INFO, DEBUG, or TRACE will be ignored.-->
+    </root>
+</configuration>
