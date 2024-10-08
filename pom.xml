@@ -40,11 +40,10 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.tiket.tix.lib</groupId>
-			<artifactId>logger</artifactId>
-			<version>21.3.2.1.0-8-SNAPSHOT</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/libs/logger-21.3.2.1.0-8-SNAPSHOT.jar</systemPath>
+			<groupId>com.tiket.tix.commonlibs</groupId>
+			<artifactId>logback-encoder</artifactId>
+			<version>1.0.0-4</version>
+			<systemPath></systemPath>
 		</dependency>
 	</dependencies>
 
